@@ -1,0 +1,11 @@
+version: '3'
+services:
+  superset:
+    build:
+      context: .
+    env_file: docker-compose.env
+    ports:
+      - "8088:8088"
+    volumes:
+      - ~/.config/gcloud:/home/superset/.config/gcloud
+      - ./superset:/var/lib/superset

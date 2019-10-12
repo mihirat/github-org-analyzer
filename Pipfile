@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+start = "python main.py"
+debug = "jupyter notebook"
+format = "autopep8 -ivr ."
+lint = "flake8 --show-source ."
+
+[dev-packages]
+pudb = "*"
+
+[packages]
+pygithub = "*"
+pandas = "*"
+pandas-gbq = "*"
+jupyter = "*"
+jupytext = "*"
+jupyter-nbextensions-configurator = "*"
+jupyter-contrib-nbextensions = "*"
+pyarrow = "*"
+google-cloud-bigquery = "*"
+
+[requires]
+python_version = "3.7"
